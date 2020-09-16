@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'simple-calculator';
+  title = 'Standard Calculator';
+  num1: number;
+  num2: number;
+  output: number;
+
+  addition() {
+    this.output = this.num1 + this.num2;
+  }
+  substraction() {
+    this.output = this.num1 - this.num2;
+  }
+  multiplication() {
+    this.output = this.num1 * this.num2;
+  }
+  division() {
+    this.output = this.num1 / this.num2;
+  }
 }
+
